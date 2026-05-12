@@ -112,8 +112,6 @@
       </div>
     </div>
 
-
-
     <section class="site-section border-bottom" id="projects-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -138,9 +136,24 @@
           </div>
         </div>
 
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <img src="images/solar_system_uml.png" alt="Solar System Simulator UML" class="img-fluid">
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3>Solar System Simulator</h3>
+              <p>This project is a 2D solar system simulator built with a Java backend and a JavaScript frontend. The simulator models the Sun and all eight planets orbiting in real time using gravity calculations that pull every object toward every other object each tick. Users can click anywhere in the browser window to drop a spaceship into the simulation and watch how gravity affects it. It might orbit a planet, slingshot around Jupiter, or fall into the Sun.</p>
+              <p>The Java backend handles all the physics and simulation state. The JavaScript frontend renders everything on a canvas in the browser. They communicate through a WebSocket connection, following an MVC architecture where the backend is the model, the frontend is the view, and the WebSocket layer is the controller.</p>
+              <p>The project uses all four pillars of OOP. Abstraction is achieved through the CelestialBody interface which lets the simulation treat every object the same regardless of type. Inheritance is used through the AbstractBody class so gravity math is only written once and shared across Star, Planet, and Spaceship. Encapsulation keeps the body list private so nothing outside the simulation can corrupt it. Polymorphism allows the gravity calculation to run the same code on every object without ever checking what type it is. The project also applies the Factory and Observer design patterns.</p>
+              <p>I was responsible for implementing the Clestial Body Interface, AbstractBody Class, and Sun, Planet and Spaceship concrete classes and writing unit tests for AbstractBody using test-driven development.</p>
+              <p>This project helped me get more comfortable with OOP design, writing unit tests, and collaborating with a team using Git branching and pull requests.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
-
     <section class="site-section" id="contact-section" data-aos="fade">
       <div class="container">
         <div class="row mb-5">
